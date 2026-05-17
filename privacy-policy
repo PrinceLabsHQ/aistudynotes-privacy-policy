@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AI Study Notes</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #ffffff;
+      --surface:  #f7f8fa;
+      --border:   #e5e7eb;
+      --text:     #111827;
+      --muted:    #6b7280;
+      --accent:   #00a86b;
+      --accent-bg:#e6f7f1;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:       #0f1117;
+        --surface:  #1a1f2e;
+        --border:   rgba(255,255,255,0.09);
+        --text:     #f1f5f9;
+        --muted:    #8a94a6;
+        --accent:   #00c87a;
+        --accent-bg:rgba(0,200,122,0.1);
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+      padding: 0 16px 80px;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-bg);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(24px, 5vw, 34px);
+      font-weight: 700;
+      letter-spacing: -.5px;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+
+    .toc-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .toc ol {
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .toc a {
+      font-size: 14px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      margin-bottom: 40px;
+      scroll-margin-top: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p { margin-bottom: 14px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    li { color: var(--text); }
+
+    .highlight-box {
+      background: var(--accent-bg);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    .contact-row {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+      align-items: baseline;
+    }
+
+    .contact-label {
+      color: var(--muted);
+      min-width: 70px;
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header { padding: 32px 0 24px; }
+      h2 { font-size: 18px; }
+      .toc, .contact-card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="badge">&#9679; Privacy Policy</div>
+    <h1>AI Study Notes</h1>
+    <p class="meta">
+      By <strong>Princelabs</strong> &nbsp;&middot;&nbsp;
+      Package: <code>com.prince.aistudynotes</code> &nbsp;&middot;&nbsp;
+      Last updated: May 17, 2026
+    </p>
+  </header>
+
+  <div class="highlight-box">
+    <strong>Short version:</strong> AI Study Notes does not collect, store, or share your personal data or the content you paste or upload. Your text stays on your device and is only sent to the AI API to generate a summary — nothing is stored by us.
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#info-collect">Information we collect</a></li>
+      <li><a href="#how-use">How we use information</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#data-storage">Data storage &amp; retention</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#your-rights">Your rights</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="info-collect">
+    <h2>1. Information we collect</h2>
+    <p>We are committed to collecting as little data as possible. Here is exactly what the app does and does not collect:</p>
+
+    <p><strong>We do NOT collect:</strong></p>
+    <ul>
+      <li>Your name, email address, or any account information</li>
+      <li>The text or PDF content you paste or upload into the app</li>
+      <li>The AI-generated summaries produced by the app</li>
+      <li>Your location data</li>
+      <li>Your contacts, camera, or microphone data</li>
+    </ul>
+
+    <p><strong>What is stored locally on your device:</strong></p>
+    <ul>
+      <li>Your theme preference (dark or light mode)</li>
+      <li>Your daily usage count (to enforce the free tier limit of 5 summaries per day)</li>
+      <li>Your summary history, if you choose to save it — this is stored only on your device using local storage and is never transmitted to our servers</li>
+    </ul>
+
+    <p><strong>What is transmitted when you generate a summary:</strong></p>
+    <ul>
+      <li>The text content you submit is sent over an encrypted HTTPS connection to the Groq AI API for processing. This is necessary to generate your summary. Please refer to the Groq Privacy Policy (groq.com) for how they handle API request data.</li>
+    </ul>
+  </section>
+
+  <section id="how-use">
+    <h2>2. How we use information</h2>
+    <p>The limited information described above is used solely to:</p>
+    <ul>
+      <li>Generate your AI summary by sending your input text to the Groq API</li>
+      <li>Remember your preferences (theme, usage count) locally on your device</li>
+      <li>Enforce the free daily usage limit without requiring an account</li>
+    </ul>
+    <p>We do not use any information for advertising, profiling, analytics, or any purpose beyond operating the core features of the app.</p>
+  </section>
+
+  <section id="third-party">
+    <h2>3. Third-party services</h2>
+    <p>AI Study Notes integrates with the following third-party services. Each operates under its own privacy policy:</p>
+
+    <p><strong>Groq API</strong> — processes your input text to generate AI summaries. Your submitted text is sent to Groq's servers during summary generation. Groq does not retain your data for training purposes beyond standard API logging. See <a href="https://groq.com/privacy-policy/" target="_blank" rel="noopener">groq.com/privacy-policy</a>.</p>
+
+    <p><strong>Google AdMob</strong> (free tier only) — displays banner advertisements in the free version of the app. AdMob may collect certain device identifiers and advertising IDs to serve contextual ads. You can opt out of personalised ads in your device settings under Google &gt; Ads. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+    <p><strong>RevenueCat</strong> (Pro subscription) — processes in-app purchase transactions for the Pro subscription. RevenueCat may receive your purchase receipt and subscription status from the Google Play Store. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+
+    <p><strong>Google Play Store</strong> — distributes the app and processes payments. Subject to Google's standard Play Store policies and privacy terms.</p>
+
+    <p>We do not sell, rent, or share your data with any other third parties.</p>
+  </section>
+
+  <section id="data-storage">
+    <h2>4. Data storage &amp; retention</h2>
+    <p>All user preferences and summary history are stored locally on your device. We do not operate our own servers or databases that store user data.</p>
+    <p>Data stored locally (theme preference, daily usage count, summary history) persists until you clear the app's data or uninstall the app. You can clear this data at any time via Android Settings &gt; Apps &gt; AI Study Notes &gt; Storage &gt; Clear Data.</p>
+    <p>Input text sent to the Groq API is processed in real time and is not retained by Princelabs after the response is delivered.</p>
+  </section>
+
+  <section id="children">
+    <h2>5. Children's privacy</h2>
+    <p>AI Study Notes is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided personal information through the app, please contact us at the address below and we will take steps to delete such information.</p>
+    <p>The app is suitable for students of all ages as a study aid, but parental guidance is recommended for children under 13 regarding any internet-connected features.</p>
+  </section>
+
+  <section id="security">
+    <h2>6. Security</h2>
+    <p>We take reasonable precautions to protect your information:</p>
+    <ul>
+      <li>All API communication is encrypted using HTTPS/TLS</li>
+      <li>Your API key is compiled into the app and is not exposed or logged</li>
+      <li>No user accounts or passwords are involved — there is no authentication surface to compromise</li>
+    </ul>
+    <p>Because we do not store your data on external servers, there is no central database that could be breached to expose your content.</p>
+  </section>
+
+  <section id="your-rights">
+    <h2>7. Your rights</h2>
+    <p>Because AI Study Notes does not collect or store personal data on our servers, most data subject rights are exercised directly on your device. You can:</p>
+    <ul>
+      <li><strong>Access your data:</strong> All locally stored data (history, preferences) is on your device</li>
+      <li><strong>Delete your data:</strong> Clear app data via Android Settings &gt; Apps &gt; AI Study Notes &gt; Storage &gt; Clear Data, or uninstall the app</li>
+      <li><strong>Opt out of personalised ads:</strong> Via Google Settings &gt; Ads on your device</li>
+      <li><strong>Manage subscriptions:</strong> Via Google Play &gt; Subscriptions</li>
+    </ul>
+    <p>If you have questions about data held by our third-party partners (Groq, AdMob, RevenueCat), please refer to their respective privacy policies or contact them directly.</p>
+  </section>
+
+  <section id="changes">
+    <h2>8. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+    <p>For material changes, we will provide a notice within the app or on the Play Store listing. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <section id="contact">
+    <h2>9. Contact us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the app's data practices, please reach out:</p>
+
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="contact-label">Developer</span>
+        <span>Princelabs</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">App</span>
+        <span>AI Study Notes (<code>com.prince.aistudynotes</code>)</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Play Store</span>
+        <a href="https://play.google.com/store/apps/dev?id=6541606234900488586" target="_blank" rel="noopener">Princelabs on Google Play</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <span><em>Add your contact email here before publishing</em></span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Princelabs &nbsp;&middot;&nbsp; AI Study Notes &nbsp;&middot;&nbsp;
+    <a href="https://play.google.com/store/apps/dev?id=6541606234900488586" target="_blank" rel="noopener">Google Play</a></p>
+    <p style="margin-top:6px">This policy is effective as of May 17, 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
